@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>CRUD</title>
+</head>
+
+<body>
+    <div id="title">
+        <h1>crud system </h1> 
+       
+      
+    </div>
+    <input type="text" id="search" oninput="searchData()" class="form-control my-3 w-75 mx-auto" placeholder="search">
+
+    <div class="row">
+        <div class="col-6">
+
+            <main class="w-60 mx-auto">
+                <section class=" bg-danger-subtle  p-3 mt-5">
+                    <button class="btn  r-50" onclick="getdata()" style="background-color:#f5c6ca ; color: aliceblue;" id="subBtn"> Submite </button>
+                    <button class="btn  r-50 d-none"  style="background-color:#35A29F; color: aliceblue;" id="updateBtn" onclick="updateData()"> updat data </button>
+
+                    <div>
+                        <label for="firstName" class="inputs-form mb-2"> First name: </label>
+                        <input type="text" value="" class="form-control" name="" id="firstName">
+                        
+                    </div>
+                    <div>
+                        <label for="lastName" class="inputs-form mb-2"> Last name: </label>
+                        <input type="text" class="form-control" name="" id="lastName">
+
+                    </div>
+                    <div>
+                        <label for="number" class="inputs-form mb-2">Your number: </label>
+                        <input type="number" class="form-control" name="" id="number">
+
+                    </div>
+                    <div>
+                        <label for="email" class="inputs-form mb-2"> Your E-mail: </label>
+                        <textarea type="text" class="form-control" name="" id="email"></textarea>
+
+                    </div>
+
+
+                </section>
+        </div>
+        <div class="col-6">
+            <section class="bg-warning mt-5">
+                <table class="table">
+                    <thead id="thead">
+                        <tr style="border:  2px solid #f8d7da ;">
+                            <th>first name</th>
+                            <th>last name</th>
+                            <th>phone</th>
+                            <th>email</th>
+                            <th>Action</th>
+                        </tr>
+
+                    </thead>
+                    <tbody id="tableData">
+
+
+
+                    </tbody>
+
+                </table>
+
+            </section>
+        </div>
+
+
+        </main>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>

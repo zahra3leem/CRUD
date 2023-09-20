@@ -1,0 +1,43 @@
+body{
+    overflow-x: hidden;
+}
+
+
+h2{
+    color:brown ;
+}
+
+.inputs-form{
+    margin-top: 10px;
+    color:white;
+    font-style: italic;
+    font-weight: 900;
+}
+
+#title{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap:nowrap;
+
+    
+}
+#thead{
+    border-radius: 30px;
+    background-color: #f8d7da;
+    color: white;
+}
+
+th{
+    background-color: #f8d7da !important;
+    color: azure !important;
+    font-style: italic;
+}
+h1{
+    color:#f9f9fb;
+    font-size: 900;
+    font-style: italic;
+    background-color:#f8d7da;
+    width: 100%;
+    
+}
